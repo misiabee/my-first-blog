@@ -25,7 +25,7 @@ SECRET_KEY = 'w=(oo20*7$o30!3l$7)%+nw+6_%u76bje94mry^*x^f@2dh533'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['misiabee.pythonanywhere.com']
 
 
 # Application definition
