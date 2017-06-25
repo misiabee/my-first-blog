@@ -4,17 +4,14 @@
 	</head>
 	<body> 
 		<div>
-			<h1><a href="">Dominika blog</a></h1>
+			<h1><a href="/">Dominika blog</a></h1>
 		</div>
+			{% for post in posts %}
 		<div>
-			<p>utworzono 25.06.2017, 10:56</p>
-			<h2><a href="">PIERWSZY POST</a></h2>
-			<p>yeyeye mega radość!</p>
+			<p>published: {{ post.published_date}}</p>
+			<h1><a href="">{{post.title}}</a></h1>
+			<p>{{ post.text|linebreaksbr }}</p>
 		</div>
-		<div>
-			<p>opublikowano dzisiaj</p>
-			<h2>główny tytuł</h2>
-			<h3> podtytuł</h3>
-		</div>
+		{% endfor %}
 	</body>
 </html>
